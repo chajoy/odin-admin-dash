@@ -83,6 +83,7 @@ img {
 .profile.large {
     height: 75px;
     width: 75px;
+    font-size: 2rem;
 }
 
 .sidebar {
@@ -97,14 +98,15 @@ img {
     background-color: var(--white);
     padding: 30px;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
     align-items: center;
+    gap: 20px;
 }
 
 /* top of header */
 .h_upper {
     display: grid;
-    grid-template-columns: 0.5fr 15fr 2fr 1fr 3fr;
+    grid-template-columns: auto 15fr auto auto auto;
     gap: 20px;
     align-items: center;
     height: 100%;
@@ -117,11 +119,11 @@ img {
     padding: 0 10px;
     justify-self: start;
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
 .h_upper input:focus {
-    outline: none;
+    outline: 3px solid --blue;
 }
 
 .h_upper img:first-child {
@@ -135,7 +137,7 @@ img {
 /* bottom of header */
 .h_lower {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: auto 5fr 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
 }
