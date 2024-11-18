@@ -20,7 +20,6 @@ body {
     display: grid;
     grid-template-columns: auto 5fr;
     grid-template-rows: 1fr auto;
-    height: 100vh;
     user-select: none;
 }
 
@@ -67,11 +66,15 @@ img {
     height: 25px;
 }
 
+h2 {
+    font-size: 1.2rem;
+}
+
 .sidebar {
     display: grid;
     align-items: start;
     grid-template-rows: auto auto 1fr;
-    gap: 70px;
+    gap: 50px;
 }
 
 .title {
@@ -100,9 +103,10 @@ img {
     list-style-type: none;
 }
 
-.sidebar ul img,
-.sidebar ul h2 {
-    display: inline-block;
+.sidebar li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
 }
 
 .sidebar li:hover {
@@ -168,14 +172,15 @@ img {
     background-color: var(--grey);
     border-radius: 20px;
     border: none;
-    padding: 0 10px;
+    padding: 0 20px;
     justify-self: start;
     width: 100%;
     height: 70%;
 }
 
 .h_upper input:focus {
-    outline: 3px solid --blue;
+    outline: none;
+    outline: 3px solid var(--blue);
 }
 
 .h_upper img:first-child {
@@ -189,7 +194,7 @@ img {
 /* bottom of header */
 .h_lower {
     display: grid;
-    grid-template-columns: auto 5fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     gap: 20px;
     align-items: center;
 }
@@ -205,6 +210,9 @@ img {
     border: none;
     font-weight: bold;
     height: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    width: 100px;
 }
 
 .h_lower button:hover {
